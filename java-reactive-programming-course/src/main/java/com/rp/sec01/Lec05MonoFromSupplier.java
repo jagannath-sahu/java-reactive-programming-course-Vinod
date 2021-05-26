@@ -14,6 +14,7 @@ public class Lec05MonoFromSupplier {
         // use just only when you have data already
         // Mono<String> mono = Mono.just(getName());
 
+        // recomended way to use Mono i.e use supplier with Mono
         Supplier<String> stringSupplier = () -> getName();
         Mono<String> mono = Mono.fromSupplier(stringSupplier);
         mono.subscribe(
@@ -26,7 +27,7 @@ public class Lec05MonoFromSupplier {
                         Util.onNext()
                 );
 
-        //here u will get different names  
+        //here u will get different names
         Mono.fromCallable(stringCallable).repeat(4)
                   .subscribe(
                             Util.onNext()
