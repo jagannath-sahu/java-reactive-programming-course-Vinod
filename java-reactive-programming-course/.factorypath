@@ -1,0 +1,10 @@
+<factorypath>
+    <factorypathentry kind="VARJAR" id="M2_REPO/io/projectreactor/reactor-core/3.4.1/reactor-core-3.4.1.jar" enabled="true" runInBatchMode="false"/>
+    <factorypathentry kind="VARJAR" id="M2_REPO/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar" enabled="true" runInBatchMode="false"/>
+    <factorypathentry kind="VARJAR" id="M2_REPO/com/github/javafaker/javafaker/1.0.2/javafaker-1.0.2.jar" enabled="true" runInBatchMode="false"/>
+    <factorypathentry kind="VARJAR" id="M2_REPO/org/apache/commons/commons-lang3/3.5/commons-lang3-3.5.jar" enabled="true" runInBatchMode="false"/>
+    <factorypathentry kind="VARJAR" id="M2_REPO/org/yaml/snakeyaml/1.23/snakeyaml-1.23-android.jar" enabled="true" runInBatchMode="false"/>
+    <factorypathentry kind="VARJAR" id="M2_REPO/com/github/mifmif/generex/1.0.2/generex-1.0.2.jar" enabled="true" runInBatchMode="false"/>
+    <factorypathentry kind="VARJAR" id="M2_REPO/dk/brics/automaton/automaton/1.11-8/automaton-1.11-8.jar" enabled="true" runInBatchMode="false"/>
+    <factorypathentry kind="VARJAR" id="M2_REPO/org/projectlombok/lombok/1.18.16/lombok-1.18.16.jar" enabled="true" runInBatchMode="false"/>
+</factorypath>
