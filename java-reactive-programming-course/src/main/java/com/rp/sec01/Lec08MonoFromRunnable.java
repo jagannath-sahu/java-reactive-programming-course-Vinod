@@ -7,7 +7,6 @@ public class Lec08MonoFromRunnable {
 
     public static void main(String[] args) {
 
-
         Mono.fromRunnable(timeConsumingProcess())
                 .subscribe(Util.onNext(),
                         Util.onError(),
