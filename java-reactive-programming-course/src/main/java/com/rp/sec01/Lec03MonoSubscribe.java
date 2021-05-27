@@ -22,6 +22,15 @@ public class Lec03MonoSubscribe {
                 Util.onComplete()
         );
 
+        mono = Mono.empty();
+
+        // only completed for empty , no error and no onNext
+        mono.subscribe(
+            Util.onNext(),
+            Util.onError(),
+            Util.onComplete()
+        );
+
 
     }
 
