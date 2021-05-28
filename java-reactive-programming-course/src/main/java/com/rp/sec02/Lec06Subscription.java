@@ -44,6 +44,7 @@ public class Lec06Subscription {
         Util.sleepSeconds(5);
         System.out.println("going to cancel");
         atomicReference.get().cancel();
+        //can invoke after cancel but u will not get data
         Util.sleepSeconds(3);
         atomicReference.get().request(4);
 
