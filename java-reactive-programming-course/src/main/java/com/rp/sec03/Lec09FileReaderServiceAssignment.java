@@ -22,13 +22,5 @@ public class Lec09FileReaderServiceAssignment {
                 })
                 .take(20)
                 .subscribe(Util.subscriber());
-
-
-
-
-
-
     }
-
-
 }

@@ -29,8 +29,5 @@ public class Lec03DoCallbacks {
         .take(2)
                 .doFinally(signal -> System.out.println("doFinally 2 : " + signal))
         .subscribe(Util.subscriber());
-
-
     }
-
 }

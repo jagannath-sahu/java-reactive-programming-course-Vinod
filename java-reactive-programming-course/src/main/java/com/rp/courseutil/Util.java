@@ -10,7 +10,7 @@ public class Util {
     private static final Faker FAKER = Faker.instance();
 
     public static Consumer<Object> onNext(){
-        return o -> System.out.println("Received : " + o);
+        return (o -> System.out.println("Received : " + o));
     }
 
     public static Consumer<Throwable> onError(){

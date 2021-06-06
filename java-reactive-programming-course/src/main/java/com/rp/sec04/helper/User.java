@@ -1,11 +1,7 @@
 package com.rp.sec04.helper;
 
 import com.rp.courseutil.Util;
-import lombok.Data;
-import lombok.ToString;
 
-@Data
-@ToString
 public class User {
 
     private int userId;
@@ -16,4 +12,24 @@ public class User {
         this.name = Util.faker().name().fullName();
     }
 
+    public int getUserId() {
+      return userId;
+    }
+
+    public void setUserId(int userId) {
+      this.userId = userId;
+    }
+
+    public String getName() {
+      return name;
+    }
+
+    public void setName(String name) {
+      this.name = name;
+    }
+
+    @Override
+    public String toString() {
+      return "User [userId=" + userId + ", name=" + name + "]";
+    }
 }

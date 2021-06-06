@@ -13,6 +13,13 @@ public class Lec07Timeout {
                 .timeout(Duration.ofSeconds(2), fallback())
                 .subscribe(Util.subscriber());
 
+      // either can return a fallback value like above or can just log the final end statement
+//        getOrderNumbers()
+//                .timeout(Duration.ofSeconds(2))
+//                .doFinally(onFinally -> {
+//                    System.out.println("streaming ended");
+//                }).subscribe(Util.subscriber());
+
 
         Util.sleepSeconds(60);
 

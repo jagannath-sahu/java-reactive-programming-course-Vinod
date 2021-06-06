@@ -21,6 +21,8 @@ public class Lec02FluxCreateRefactoring {
 
         Util.sleepSeconds(2);
 
+//        nameProducer.produceTillCanada();
+
     }
 
 }

@@ -11,7 +11,7 @@ public class Lec08FluxPush {
 
         NameProducer nameProducer = new NameProducer();
 
-        Flux.create(nameProducer)
+        Flux.push(nameProducer)
                 .subscribe(Util.subscriber());
 
         Runnable runnable = nameProducer::produce;

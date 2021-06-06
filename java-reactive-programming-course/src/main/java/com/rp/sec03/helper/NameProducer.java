@@ -20,4 +20,12 @@ public class NameProducer implements Consumer<FluxSink<String>> {
         this.fluxSink.next(thread + " : " + name);
     }
 
+    public void produceTillCanada() {
+        String country;
+        do{
+          country = Util.faker().country().name();
+          this.fluxSink.next(country);
+        }while (!country.toLowerCase().equals("canada"));
+    }
+
 }

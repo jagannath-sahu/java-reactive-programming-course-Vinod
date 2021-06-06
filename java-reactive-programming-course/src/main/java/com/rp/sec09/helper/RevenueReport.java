@@ -1,11 +1,9 @@
 package com.rp.sec09.helper;
 
-import lombok.ToString;
-
 import java.time.LocalDateTime;
 import java.util.Map;
 
-@ToString
+
 public class RevenueReport {
 
     private LocalDateTime localDateTime = LocalDateTime.now();
@@ -14,4 +12,10 @@ public class RevenueReport {
     public RevenueReport(Map<String, Double> revenue) {
         this.revenue = revenue;
     }
+
+    @Override
+    public String toString() {
+      return "RevenueReport [localDateTime=" + localDateTime + ", revenue=" + revenue + "]";
+    }
+
 }
