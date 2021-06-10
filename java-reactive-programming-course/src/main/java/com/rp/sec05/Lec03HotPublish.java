@@ -13,7 +13,7 @@ public class Lec03HotPublish {
         Flux<String> movieStream = Flux.fromStream(() -> getMovie())
                 .delayElements(Duration.ofSeconds(1))
                 .publish()
-                .refCount(1);
+                .refCount(1);  // check with count 2 means wait till 2 subscriber joins
 
         movieStream
                 .subscribe(Util.subscriber("sam"));

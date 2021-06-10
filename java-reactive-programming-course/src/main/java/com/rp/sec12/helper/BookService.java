@@ -19,7 +19,7 @@ public class BookService {
 
     public static Mono<String> getBook(){
         return Mono.deferContextual(ctx -> {
-            if(ctx.get("allow")){
+            if((Boolean)ctx.get("allow")){
                 return Mono.just(Util.faker().book().title());
             }else{
                 return Mono.error(new RuntimeException("not-allowed"));
@@ -27,8 +27,6 @@ public class BookService {
         })
         .contextWrite(rateLimiterContext());
     }
-
-
 
     private static Function<Context, Context> rateLimiterContext(){
         return ctx -> {
@@ -43,7 +41,5 @@ public class BookService {
           return ctx.put("allow", false);
         };
     }
-
-
 
 }

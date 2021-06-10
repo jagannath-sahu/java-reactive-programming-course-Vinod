@@ -27,6 +27,4 @@ public class Lec10Transform {
                             .doOnDiscard(Person.class, p -> System.out.println("Not allowing : " + p));
     }
 
-
-
 }

@@ -23,7 +23,4 @@ public class Lec09SwitchIfEmpty {
     private static Flux<Integer> fallback(){
         return Flux.range(20, 5);
     }
-
-
-
 }

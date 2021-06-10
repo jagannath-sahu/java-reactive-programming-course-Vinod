@@ -18,7 +18,6 @@ public class Lec06Assignment {
         orderService.orderStream().subscribe(inventoryService.subscribeOrderStream());
 
         inventoryService.inventoryStream()
-
                 .subscribe(Util.subscriber("inventory"));
 
         revenueService.revenueStream()
@@ -27,6 +26,5 @@ public class Lec06Assignment {
         Util.sleepSeconds(60);
 
     }
-
 
 }
