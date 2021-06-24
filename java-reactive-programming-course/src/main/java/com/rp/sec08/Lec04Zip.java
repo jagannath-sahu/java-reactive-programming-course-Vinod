@@ -8,6 +8,8 @@ public class Lec04Zip {
     public static void main(String[] args) {
         Flux.zip(getBody(), getEngine(), getTires())
                 .subscribe(Util.subscriber());
+        
+        getBody().zipWith(getEngine(), (b, s) -> String.format("%s %s", b, s)).subscribe(Util.subscriber());
 
     }
 
